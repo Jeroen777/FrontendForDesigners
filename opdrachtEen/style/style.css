@@ -1,0 +1,188 @@
+body {
+    font-family: roboto;
+}
+
+/*  */
+/* navigatie balk */
+/*  */
+
+header nav {
+    background-color: black;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 0;
+    margin: 0;
+
+    justify-content: space-around;
+    text-align: center;
+    list-style-type: none;
+}
+
+header nav ul li:first-child {
+    padding-bottom: 1em;
+    grid-column: 1/-1;
+}
+
+header nav ul li:last-of-type{
+    padding: auto;
+}
+
+header nav img {
+    height: 1.5em;
+    margin-top: 1em;
+}
+
+header nav ul a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+header nav ul a:hover {
+    color: #60adb1;
+    transform: scale(1.1);
+}
+
+/**/
+/* navigatie responsive*/
+/**/
+
+@media screen and (min-width: 40em) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+
+    header nav ul {
+        max-width: 96.5%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 6em;
+    }
+
+    header nav ul li {
+        width: auto;
+    }
+
+    header nav img {
+        margin-top: auto;
+        height: 50%;
+        width: 40%;
+    }
+
+    header nav ul li:first-child {
+        margin: auto;
+        margin-left: 6em;
+        width: auto;
+        padding: 0;
+
+    }
+
+
+}
+
+/*  */
+/* Movie blokje */
+/*  */
+
+#movies {
+    /* padding-top: 2em; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-gap: 1em;
+}
+
+#movies article {
+    background: red;
+    margin-top: 1em;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+    
+
+    background-color: whitesmoke;
+}
+
+#movies h2 {
+    margin-bottom: 0;
+
+    font-size: 1.73em;
+    color: #60adb1;
+}
+
+#movies img {
+    order: -1;
+    height: auto;
+    width: 100%;
+}
+
+
+
+#movies p {
+    padding-top: 1em;
+}
+
+/*  */
+/* Hartje button + states */
+/*  */
+
+article button {
+    border-color: transparent;
+    font-size: 2rem;
+    color: #ADAFBC;
+    background-color: transparent;
+    transition: transform 50ms;
+  }
+  
+  article button:hover {
+    color: red;
+  }
+  
+  article button:active {
+    transform: translateY(0.1rem);
+  }
+
+ .haveLiked {
+     font-size: 3em;
+     color: red;
+ }
+
+ .haveLiked {
+    font-size: 3em;
+    color: red;
+}
+
+/*  */
+/* Like notificatie als je geliked hebt*/
+/*  */
+
+#likeAantal {
+    padding-top: 1em;
+    padding-left: -2em;
+    font-size: .8em;
+    background: red;
+    transition: .5s;
+    color: white;
+    width: 1.5em;
+    height: 1.5em;
+    opacity:0;
+    
+  
+  }
+
+  #likeAantal.visible {
+    opacity:1;
+  }
+

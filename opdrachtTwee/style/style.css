@@ -1,0 +1,775 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/**/
+/* navigatie */
+/**/
+
+header {
+    z-index: 99;
+}
+
+header nav {
+    background-color: black;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 0;
+    margin: 0;
+
+    justify-content: space-around;
+    text-align: center;
+    list-style-type: none;
+}
+
+header nav ul li:first-child {
+    padding-bottom: 1em;
+    grid-column: 1/-1;
+}
+
+header nav img {
+    height: 1.5em;
+    margin-top: 1em;
+}
+
+header nav ul a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+header nav ul a:hover {
+    color: #60adb1;
+    transform: scale(1.1);
+}
+header form {
+    position: absolute;
+    padding: 1em;
+}
+
+header form input{
+    font-size: 3em;
+    color: pink;
+}
+
+/**/
+/* navigatie responsive*/
+/**/
+
+@media screen and (min-width: 40em) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+
+    header nav ul {
+        max-width: 96.5%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 6em;
+    }
+
+    header nav ul li {
+        width: auto;
+    }
+
+    header nav img {
+        margin-top: auto;
+        height: 50%;
+        width: 40%;
+    }
+
+    header nav ul li:first-child {
+        margin: auto;
+        margin-left: 6em;
+        width: auto;
+        padding: 0;
+
+    }
+
+
+}
+
+/**/
+/* Achtergrond afbeelding met tekst*/
+/**/
+
+/* Achtergrond afbeelding */
+.hero article {
+    height: 50vh;
+    background-image: url(strand.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+.container {
+    width: 20%;
+    margin: 10px auto;
+}
+
+.carousel {
+    border: 2px solid #ccc;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.3s;
+}
+
+.slider article {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider img{
+    max-width: 100vw;
+}
+ 
+.controls .arrow{
+    position: absolute;
+    top: 50%;
+    color: red;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right{
+    right: 10px;
+}
+/* Gradient over afbeelding */
+
+
+/* titel van bovenaan pagina */
+.hero h1 {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+
+    font-size: 11vw;
+    color: white;
+    transition: all 1s ease 0s;
+    z-index: 1;
+}
+
+.hero h1:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 40em) {
+    .hero h1 {
+        top: 18%;
+        font-size: 6em;
+    }
+
+    .hero article::after {
+        top: 0;
+        height: 76vh;
+    }
+}
+
+/**/
+/* Main aanpassen*/
+/**/
+
+main {
+    padding: 1em;
+}
+
+
+/**/
+/* Main responsive aanpassen*/
+/**/
+@media screen and (min-width: 40em) {
+    main {
+        max-width: 80%;
+        margin: auto;
+
+    }
+
+    .hero article {
+        height: 70vh;
+        background-image: url(strand.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+}
+
+/**/
+/* Tekst over mij*/
+/**/
+
+main > #over-mij, #ervaring {
+    padding: auto;
+    line-height: 2rem;
+}
+
+#over-mij h2,
+#over-mij p,
+#ervaring h2,
+#ervaring p {
+    padding: 1rem;
+
+}
+
+#over-mij h2, #ervaring h2 {
+    padding-bottom: 0;
+    font-size: 3em;
+
+}
+
+#over-mij p, #ervaring p {
+    padding-top: 0;
+    font-size: 1.1em;
+}
+
+/* Meer over mij weten knop*/
+#over-mij a, #ervaring a {
+    display: flex;
+    padding: 0.5em;
+    width: 70%;
+    margin-top: 1em;
+
+    text-decoration: none;
+    background-color: #0b537b;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    transition: box-shadow .3s;
+    transition: all 1s ease 0s;
+}
+
+#over-mij a:hover, #ervaring a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(11, 33, 33, .2);
+}
+
+
+/**/
+/* Tekst over mij responsive*/
+/**/
+
+@media screen and (min-width: 40em) {
+    main > #over-mij, #ervaring  {
+        display: flex;
+        height: 20em;
+        margin-bottom: -10em;
+    }
+
+    #over-mij h2,
+    #over-mij p,
+    #ervaring h2,
+    #ervaring p {
+        padding: auto;
+    }
+
+    #over-mij h2, #ervaring h2 {
+        line-height: 1.2em;
+        padding: 0;
+        margin-top: 5rem;
+    }
+
+    #over-mij p, #ervaring p {
+        justify-content: center;
+        margin: auto;
+        margin-top: 5rem;
+        padding: 0;
+        max-width: 60%;
+    }
+
+    #over-mij a, #ervaring a {
+        width: 40%;
+    }
+
+    #ervaring {
+        padding-top: 2em;
+    }
+}
+
+
+/**/
+/* Mijn werk tegels/blokken*/
+/**/
+
+#tegels {
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-gap: 1em;
+}
+
+#tegels article {
+    background: red;
+
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+    margin-top: 3em;
+
+    background-color: whitesmoke;
+}
+
+/* Content in de tegels aanpassen*/
+#tegels h2 {
+    margin-bottom: 0;
+
+    font-size: 1.73em;
+    color: #60adb1;
+}
+
+#tegels img {
+    order: -1;
+    height: auto;
+    width: 100%;
+}
+
+#tegels p {
+    padding-top: 1em;
+}
+
+#tegels article > a {
+    display: block;
+    margin-top: 1em;
+    background-color: #0b537b;
+    border-radius: 10px;
+    width: 7em;
+
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    transition: all 0.4s ease 0s;
+}
+
+#tegels a:hover {
+    background: #60adb1;
+}
+
+@media screen and (min-width: 40em) {
+    #tegels article {
+        margin-top: 9em;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 840px) {
+    #tegels {
+        margin-top: 20em;
+        
+    }
+
+    #over-mij h2{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(auto-fit, minmax(1fr 1fr));
+    }
+}
+
+@media (min-width: 640px) and (max-width: 840px) {
+    #tegels {
+        margin-top: 20em;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 1575px) {
+    #tegels {
+        margin-top: 10em;
+    }
+}
+
+
+/**/
+/* Portfolio pagina*/
+/**/
+
+
+/* Titel portfolio*/
+.portfolio-section {
+    width: 100vw;
+    height: 20vh
+}
+
+.portfolio-section h1 {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3em;
+}
+
+/* Titel portfolio responsive*/
+@media screen and (min-width: 40em) {
+    .portfolio-section h1 {
+        top: 20%;
+        font-size: 5em;
+
+    }
+}
+
+/**/
+/* Werk pagina's*/
+/**/
+
+
+/* Titel section*/
+.werk-section {
+    width: 100vw;
+    height: 10vh;
+}
+
+.werk-section h1 {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2em;
+
+    margin-top: 1em;
+}
+
+.werk-section h2 {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+
+    font-size: 1.3em;
+    
+    margin-top: 9em;
+    
+}
+
+/* Titel section responsive*/
+@media screen and (min-width: 40em) {
+    .werk-section h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .werk-section h2 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+}
+
+/* Werk informatie en fotos section*/
+.werk-info, .jeroen-info {
+    margin-top: 3em;
+}
+
+.werk-info img, .jeroen-info img {
+    padding-top: 2em;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.werk-info article {
+    margin-bottom: 3em;
+}
+
+.werk-info article:first-of-type {
+    margin-bottom: 0;
+}
+
+.werk-info p {
+    padding-bottom: 1em;
+    max-width: 100%;
+}
+
+.jeroen-info {
+    padding: 1em;
+   margin: auto;
+}
+
+.jeroen-info img {
+   
+}
+
+
+/* Werk informatie en fotos section responsive*/
+@media screen and (min-width: 40em) {
+
+    .werk-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28em, 1fr));
+        justify-content: center;
+        padding-top: 3em;
+    }
+    .werk article, .jeroen-info {
+        justify-content: center;
+    }
+
+    .werk-section, .jeroen-info {
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .werk-section h1{
+        padding-top: 2em;
+    }
+
+    .werk-section h2{
+        padding-top: 10em;
+        margin-bottom: 2em;
+    }
+
+    .werk-info h1 {
+        font-size: 2em;
+        
+    }
+
+    .werk-info p {
+        font-size: 1em;
+        padding-bottom: 2em;
+        width: 90%;
+
+    }
+
+    .werk-info h1,
+    p {
+        margin: 0em 0em 1em 0em;
+    }
+
+    .meer {
+        background-color: #0b537b;
+        padding: 1em;
+        color: white;
+    }
+
+    .werk-info img, .jeroen-info img {
+        width: 90%;
+    }
+
+    
+
+}
+
+    @media screen and (min-width: 1225px) {
+        .jeroen-info{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+            grid-gap: 2em;
+            height: 100vh;
+            margin-bottom: 15em;
+            margin-top: 3em;
+        } 
+        
+        .jeroen-info img{
+            width: 50%;
+            float: right;
+            padding: 0;
+        }
+    
+        .jeroen-info p {
+            width: 80%;
+        }
+    
+        .jeroen-info h1{
+            font-size: 1.3em;
+        }
+    
+        .jeroen-info h2{
+            font-size: 1.2em;
+        }
+
+        .jeroen-info {
+            width: 100vw;
+            height: 20vh;
+        }
+
+    }
+
+}
+   }
+
+   @media screen and (min-width: 1050px) {
+    .jeroen-info{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+        grid-gap: 2em;
+        height: 45em;
+    } 
+
+    .jeroen-info p{
+        width: 50%;
+    }
+
+
+   }
+
+   @media screen and (min-width: 641px) {
+    .jeroen-info{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+        grid-gap: 2em;
+        height: 35em;
+    } 
+
+    .jeroen-info article {
+    }
+
+    .jeroen-info h1 {
+        margin-top: 1.35em;
+    }
+
+
+  }
+
+  @media screen and (min-width: 800px) {
+    .jeroen-info{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+        grid-gap: 2em;
+        padding: 0;
+    } 
+
+    .jeroen-info img {
+        width: 50%;
+        float: right;
+    }
+
+    .jeroen-info p{
+        width: 80%;
+    }
+  }
+
+   
+/*Footer */
+
+footer nav {
+    background-color: black;
+}
+
+footer nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 0;
+    margin: 0;
+
+    justify-content: space-around;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* footer nav img {
+    height: 1.5em;
+    margin-top: 1em;
+} */
+
+footer nav ul li{
+}
+
+footer nav ul a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    transition: all .2s ease-in-out;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer nav ul a:hover {
+    color: #60adb1;
+    transform: scale(1.1);
+}
+
+footer img{
+        height: 20%;
+        width: 20%;
+}
+
+/**/
+/* navigatie responsive*/
+/**/
+
+@media screen and (min-width: 40em) {
+    footer {
+        margin-top: 10em;
+        z-index: 2;
+    }
+
+
+    footer nav ul {
+        display: flex;
+        justify-content: center;
+        padding-right: 6em;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer nav ul li {
+        width: auto;
+    }
+
+    footer nav ul li a{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    footer nav img {
+        margin-top: auto;
+        height: 50%;
+        width: 30%;
+    }
+
+    
+
+
+}
+
+
+
