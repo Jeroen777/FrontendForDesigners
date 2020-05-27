@@ -1,6 +1,6 @@
 # Titel
 
-opdracht 1: https://jeroen777.github.io/jeroenFrontend/opdrachtEen/
+opdracht 1: https://jeroen777.github.io/FrontendForDesigners/opdrachtEen/
 
 opdracht 2: https://jeroen777.github.io/jeroenFrontend/opdrachtTwee/
 
