@@ -2,6 +2,8 @@
 Ik heb de volgende case gekozen:
 * Carousel met vakantiefoto's: Een carousel met meerdere foto's van een vakantie, die je kan bedienen met een button en met de pijltjes op het toetsenbord.
 
+# Prototype
+https://jeroen777.github.io/FrontendForDesigners/opdrachtTwee/
 
 Ik heb een carousel gemaakt. Als je op de rechter knop drukt zullen de foto's 1 naar rechts gaan. Als je op de linker knop drukt gaat deze weer terug naar de vorige.
 
