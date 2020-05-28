@@ -155,18 +155,30 @@ header form input{
     max-width: 100vw;
 }
  
-.controls .arrow{
+.controls .left, .right {
     position: absolute;
     top: 50%;
     color: red;
 }
 
-.arrow.left {
+
+.left {
     left: 10px;
 }
 
-.arrow.right{
+.left img{
+    width: 30%;
+    float: left;
+    
+}
+
+.right{
     right: 10px;
+}
+
+.right img{
+    width: 30%;
+    float: right;
 }
 /* Gradient over afbeelding */
 

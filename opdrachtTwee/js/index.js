@@ -9,6 +9,7 @@ var indexGetal = 0;
 //Als je op de rechter knop drukt dan gaat de slider naar rechts
 //Je maakt het index getal +1 zo krijg je iedere keer 1 * -25% waardoor het carousel verschuift
 // Dus het stapje gaat iedere keer -25% druk je weer gaat die vanaf dat punt weer -25%
+// Ook moet de slider niet oneindig verder kunnen gaan vandaar een if statement
 
 function rightKlik() {
     indexGetal = (indexGetal < 3) ? indexGetal + 1 : 3;
