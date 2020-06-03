@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+img {
+    width: 20%;
+}
+
+article {
+    color: white;
+    background-color: grey;
+    margin: 1em 1em 1em 1em;
+    padding: 1em;
+}
