@@ -1,14 +1,7 @@
-# Opdracht 1 microinteractie
-Ik heb de volgende case gekozen:
-* In een verzameling films wil ik een aantal leuke films kunnen bewaren om ze later te bekijken.
+# Opdracht 3 - Een interactie uitwerken met externe data
 
 
-Ik heb de volgende micro interactie gemaakt. Zodra je op de like button onder de film drukt verandert het hartje.
-Ik heb hiervoor gebruik gemaakt van queryselectors, functions, classlist, toggle en add event listeners.
-Ook heb ik toegevoegd als je op het hartje drukt dat er een 1tje boven in het scherm komt te staan zodat je ziet dat 
-er een nieuwe melding is. Je hebt een favoriet toegevoegd.
-
-<img width="1422" alt="Screenshot 2020-05-14 at 13 35 56" src="https://user-images.githubusercontent.com/60734114/81931057-c7c95300-95e9-11ea-9a6d-45d55b977d02.png">
+<img width="1674" alt="Screenshot 2020-06-04 at 15 11 25" src="https://user-images.githubusercontent.com/60734114/83761255-59226700-a676-11ea-8029-1e1963e476fb.png">
 
 ### Begrippen
 
