@@ -12,7 +12,7 @@ Uiteindelijk moet het van die JSON zoiets worden:
 <img width="1652" alt="Screenshot 2020-06-04 at 15 11 13" src="https://user-images.githubusercontent.com/60734114/83761526-b9190d80-a676-11ea-83af-35b27acc037a.png">
 
 ### schetsen
-
+![IMG_7704](https://user-images.githubusercontent.com/60734114/83763872-7efd3b00-a679-11ea-9a28-a8cd97917c7d.jpg)
 
 ### Begrippen
 
