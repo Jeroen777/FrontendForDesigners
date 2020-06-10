@@ -1,6 +1,6 @@
 const header = document.querySelector('header');
 const section = document.querySelector('section');
-let requestURL = 'https://private-anon-a5d6a716a0-carsapi1.apiary-mock.com/manufacturers'; 
+let requestURL = 'https://raw.githubusercontent.com/Jeroen777/FrontendForDesigners/master/eindopdracht/cars.json'; 
 let request = new XMLHttpRequest(); 
 request.open('GET', requestURL); //haalt de URL op 
 request.responseType = 'json'; //aangeven wat voor de type de URL is
