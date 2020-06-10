@@ -1,43 +1,32 @@
-# Opdracht 1 microinteractie
-Ik heb de volgende case gekozen:
-* In een verzameling films wil ik een aantal leuke films kunnen bewaren om ze later te bekijken.
+# Opdracht 3 - Een interactie uitwerken met externe data
 
+Voor deze opdracht ga ik een functionaliteit ontwerpen met externe data. De data is JSON die met een REST API van een externe bron wordt ingeladen met Javascript. Als de data geladen is moeten gebruikers je ontwerp op verschillende manieren kunnen bedienen. Verschillende states zijn vormgeven en worden op het juiste moment getoond.
 
-Ik heb de volgende micro interactie gemaakt. Zodra je op de like button onder de film drukt verandert het hartje.
-Ik heb hiervoor gebruik gemaakt van queryselectors, functions, classlist, toggle en add event listeners.
-Ook heb ik toegevoegd als je op het hartje drukt dat er een 1tje boven in het scherm komt te staan zodat je ziet dat 
-er een nieuwe melding is. Je hebt een favoriet toegevoegd.
+Ik gebruik het volgende JSON file.
+https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json
 
-<img width="1422" alt="Screenshot 2020-05-14 at 13 35 56" src="https://user-images.githubusercontent.com/60734114/81931057-c7c95300-95e9-11ea-9a6d-45d55b977d02.png">
+<img width="1674" alt="Screenshot 2020-06-04 at 15 11 25" src="https://user-images.githubusercontent.com/60734114/83761255-59226700-a676-11ea-8029-1e1963e476fb.png">
+
+Uiteindelijk moet het van die JSON zoiets worden:
+
+<img width="1652" alt="Screenshot 2020-06-04 at 15 11 13" src="https://user-images.githubusercontent.com/60734114/83761526-b9190d80-a676-11ea-83af-35b27acc037a.png">
+
+### schetsen
+![IMG_7704](https://user-images.githubusercontent.com/60734114/83763872-7efd3b00-a679-11ea-9a28-a8cd97917c7d.jpg)
 
 ### Begrippen
 
 ##### Keep users in control:
-Ik heb voor de button een hartje gebruikt. Dit heb ik gedaan om dat dit een herkenbaar icoontje is om iets leuk te vinden. Zodra je op mijn like knop drukt verandert het knopje naar een groter rood hartje. Hierdoor weet je dat deze geselecteerd is. Ook krijg je een melding boven in het scherm te staan zodat je een soort confirm krijgt dat dit gelukt is.
 
 ##### Visual hierarchy:
-De knop is anders dan de rest van de omgeving van vorm. Hij staat ook los van de rest waardoor iets meer opvalt.
+
+#### Provide a natural next step
+
+#### Appearance follows behavior
 
 
 ### Javascript toegepast:
 
-queryselector om de button te linken met btn
-```
-let btn = document.querySelector('#test');
-let movieToggle = document.querySelector("#likeAantal");
-```
-
-function om een class toe te voegen met de toggle en daarna weer weg te halen
-```
-function toggleLike(){
-  movieToggle.classList.toggle("visible");
-  btn.classList.toggle('haveLiked');
-}
-```
-
-event listener om heartje klikbaar te maken
-```
-btn.addEventListener("click", toggleLike)
 ```
 Om mijn files te gebruiken kun je de repo clonen: 
 
