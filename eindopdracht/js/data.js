@@ -21,13 +21,11 @@ function movieList(jsonObj) {
         const myH1 = document.createElement('h1');
 
         const myImage = document.createElement('img');
-        const myVydeo = document.createEelement('video');
         //info aan elementen toewijzen 
         myH1.textContent = info[i].name;
         
         myImage.src = info[i].img_url;
-
-        myVideo.src = info[i].vid_url;
+        
         //actors element maken --> info toewijzen --> loop door alle actors heen
 
         
@@ -35,7 +33,6 @@ function movieList(jsonObj) {
         myArticle.appendChild(myH1);
     
         myArticle.appendChild(myImage);
-        myVideo.appenchild(myVideo);
 
         section.appendChild(myArticle);
     }
