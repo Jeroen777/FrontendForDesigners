@@ -1,0 +1,110 @@
+[
+    {
+    "num_models": 2,
+    "img_url": "http://ts4.mm.bing.net/th?id=OIP.Mc8b9a49eb7febd5471812578a1c2e300o0&pid=15.1",
+    "max_car_id": 254,
+    "id": 16,
+    "name": "mclaren",
+    "avg_horsepower": 641,
+    "avg_price": 272862.5
+    },
+    {
+    "num_models": 7,
+    "img_url": "https://en.wikipedia.org/wiki/Dodge_Viper#/media/File:Aewroi.jpg",
+    "max_car_id": 112,
+    "id": 20,
+    "name": "dodge",
+    "avg_horsepower": 352.14285714285717,
+    "avg_price": 42466.42857142857
+    },
+    {
+    "num_models": 3,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Bentley-logo-1.jpg",
+    "max_car_id": 67,
+    "id": 21,
+    "name": "bentley",
+    "avg_horsepower": 540.3333333333334,
+    "avg_price": 235800
+    },
+    {
+    "num_models": 5,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Aston-Martin-logo-1.jpg",
+    "max_car_id": 11,
+    "id": 22,
+    "name": "aston-martin",
+    "avg_horsepower": 531,
+    "avg_price": 199819
+    },
+    {
+    "num_models": 7,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Mitsubishi-logo-1.jpg",
+    "max_car_id": 274,
+    "id": 25,
+    "name": "mitsubishi",
+    "avg_horsepower": 152.14285714285714,
+    "avg_price": 23680.714285714286
+    },
+    {
+    "num_models": 12,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Volkswagen-logo-1.jpg",
+    "max_car_id": 363,
+    "id": 26,
+    "name": "volkswagen",
+    "avg_horsepower": 203.08333333333334,
+    "avg_price": 29929.583333333332
+    },
+    {
+    "num_models": 21,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Toyota-logo-1.jpg",
+    "max_car_id": 339,
+    "id": 27,
+    "name": "toyota",
+    "avg_horsepower": 209.23809523809524,
+    "avg_price": 36709.76190476191
+    },
+    {
+    "num_models": 14,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Hyundai-logo-1.jpg",
+    "max_car_id": 160,
+    "id": 29,
+    "name": "hyundai",
+    "avg_horsepower": 246.5,
+    "avg_price": 32676.428571428572
+    },
+    {
+    "num_models": 13,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Cadillac-logo-1.jpg",
+    "max_car_id": 76,
+    "id": 30,
+    "name": "cadillac",
+    "avg_horsepower": 372.15384615384613,
+    "avg_price": 61818.46153846154
+    },
+    {
+    "num_models": 2,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Lamborghini-logo-1.jpg",
+    "max_car_id": 199,
+    "id": 31,
+    "name": "lamborghini",
+    "avg_horsepower": 665,
+    "avg_price": 393025
+    },
+    {
+    "num_models": 4,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Ferrari-logo-1.jpg",
+    "max_car_id": 118,
+    "id": 36,
+    "name": "ferrari",
+    "avg_horsepower": 633,
+    "avg_price": 276428
+    },
+    {
+    "num_models": 19,
+    "img_url": "http://www.carlogos.org/uploads/car-logos/Nissan-logo-1.jpg",
+    "max_car_id": 283,
+    "id": 38,
+    "name": "nissan",
+    "avg_horsepower": 251.21052631578948,
+    "avg_price": 36314.73684210526
+    }
+    ]
