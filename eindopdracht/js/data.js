@@ -17,12 +17,15 @@ function carList(jsonObj) {
     for (let i = 0; i < info.length; i++) { //loop door alle onderdelen van de jsonObj
 
         //elementen aanmaken 
+        const imgBlok = document.createElement('class');
+
         const myArticle = document.createElement('article');
         const myH1 = document.createElement('h1');
         const myHP = document.createElement('p');
         const myPrice = document.createElement('p');
 
         const myImage = document.createElement('img');
+        const sliderImage = document.createElement('img');
         
         //info aan elementen toewijzen 
         myH1.textContent = info[i].name;
@@ -30,9 +33,7 @@ function carList(jsonObj) {
         myPrice.textContent = info[i].avg_price;
 
         myImage.src = info[i].img_url;
-
-        //actors element maken --> info toewijzen --> loop door alle actors heen
-
+        sliderImage.src = info[i].img_url;
 
         //toevoegen van de elementen + info
         myArticle.appendChild(myH1);
@@ -40,8 +41,10 @@ function carList(jsonObj) {
         myArticle.appendChild(myPrice);
 
         myArticle.appendChild(myImage);
+        imgBlok.appendChild(sliderImage);
 
         section.appendChild(myArticle);
+        slider.appendChild(imgBlok);
     }
 
 
@@ -62,7 +65,7 @@ var indexGetal = 0;
 // Ook moet de slider niet oneindig verder kunnen gaan vandaar een if statement
 
 function rightKlik() {
-    indexGetal = (indexGetal < 3) ? indexGetal + 1 : 3;
+    indexGetal = (indexGetal < 11) ? indexGetal + 1 : 11;
     slider.style.transform = 'translate(' + (indexGetal) * -25 + '%)';
 }
 
