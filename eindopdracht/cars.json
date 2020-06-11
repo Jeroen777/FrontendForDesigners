@@ -1,7 +1,7 @@
 [
     {
     "num_models": 2,
-    "img_url": "http://ts4.mm.bing.net/th?id=OIP.Mc8b9a49eb7febd5471812578a1c2e300o0&pid=15.1",
+    "img_url": "https://www.topgear.com/sites/default/files/styles/fit_1960x1102/public/cars-car/carousel/2015/02/buyers_guide_-_mclaren_p1_2014_-_front_quarter.jpg?itok=RiwNdMnU",
     "max_car_id": 254,
     "id": 16,
     "name": "mclaren",
@@ -10,7 +10,7 @@
     },
     {
     "num_models": 7,
-    "img_url": "https://static.autoblog.nl/images/wp2016/viper-gts-blauw-header.jpg",
+    "img_url": "https://topgear.nl/thumbs/hd/2020/05/dodge-challenger-redeye-hennessey-hpe1000.jpg",
     "max_car_id": 112,
     "id": 20,
     "name": "dodge",
