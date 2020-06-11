@@ -14,21 +14,21 @@
     "max_car_id": 112,
     "id": 20,
     "name": "dodge",
-    "avg_horsepower": 352.14285714285717,
-    "avg_price": 42466.42857142857
+    "avg_horsepower": 352,
+    "avg_price": 42466
     },
     {
     "num_models": 3,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Bentley-logo-1.jpg",
+    "img_url": "https://ag-spots-2020.o.auroraobjects.eu/2020/01/31/bentley-continental-gt-v8-2020-c327931012020211144_1.jpg",
     "max_car_id": 67,
     "id": 21,
     "name": "bentley",
-    "avg_horsepower": 540.3333333333334,
+    "avg_horsepower": 540,
     "avg_price": 235800
     },
     {
     "num_models": 5,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Aston-Martin-logo-1.jpg",
+    "img_url": "https://ag-spots-2020.o.auroraobjects.eu/2020/06/09/aston-martin-dbs-superleggera-c980109062020153016_1.jpg",
     "max_car_id": 11,
     "id": 22,
     "name": "aston-martin",
@@ -37,52 +37,52 @@
     },
     {
     "num_models": 7,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Mitsubishi-logo-1.jpg",
+    "img_url": "https://prod.pictures.autoscout24.net/listing-images/e8c27290-9b13-42d1-b6df-ff4e1b2852eb_62c8400b-3e56-4d7f-85fe-cab92cb89ab8.jpg/640x480.jpg",
     "max_car_id": 274,
     "id": 25,
     "name": "mitsubishi",
-    "avg_horsepower": 152.14285714285714,
-    "avg_price": 23680.714285714286
+    "avg_horsepower": 152,
+    "avg_price": 23680
     },
     {
     "num_models": 12,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Volkswagen-logo-1.jpg",
+    "img_url": "https://topgear.nl/thumbs/hd/2020/03/vw-golf-r-khaki-groen-driekwart.jpg",
     "max_car_id": 363,
     "id": 26,
     "name": "volkswagen",
-    "avg_horsepower": 203.08333333333334,
-    "avg_price": 29929.583333333332
+    "avg_horsepower": 203,
+    "avg_price": 29929
     },
     {
     "num_models": 21,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Toyota-logo-1.jpg",
+    "img_url": "https://static.autoblog.nl/images/wp2014/toyota-supra-tuning-1.jpeg",
     "max_car_id": 339,
     "id": 27,
     "name": "toyota",
-    "avg_horsepower": 209.23809523809524,
-    "avg_price": 36709.76190476191
+    "avg_horsepower": 209,
+    "avg_price": 36709
     },
     {
     "num_models": 14,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Hyundai-logo-1.jpg",
+    "img_url": "https://gcm.moniteurautomobile.be/imgcontrol/c680-d465/clients/moniteur/content/medias/images/news/26000/600/0/hyundai-veloster-n-1.jpg",
     "max_car_id": 160,
     "id": 29,
     "name": "hyundai",
     "avg_horsepower": 246.5,
-    "avg_price": 32676.428571428572
+    "avg_price": 32676
     },
     {
     "num_models": 13,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Cadillac-logo-1.jpg",
+    "img_url": "https://thumbor.pijper.io/oHdS1CXu-5ThM3ev-cLMmpTwC2E=/1896x1066/center/middle/filters:format(webp)/https://cdn.pijper.io/source/autobahn/c4e0bfb76e_2013-Cadillac-Elmiraj-Concept-002.jpg",
     "max_car_id": 76,
     "id": 30,
     "name": "cadillac",
-    "avg_horsepower": 372.15384615384613,
-    "avg_price": 61818.46153846154
+    "avg_horsepower": 372,
+    "avg_price": 61818
     },
     {
     "num_models": 2,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Lamborghini-logo-1.jpg",
+    "img_url": "https://static.autoblog.nl/images/wp2019/svj-aventador-993.jpg",
     "max_car_id": 199,
     "id": 31,
     "name": "lamborghini",
@@ -91,7 +91,7 @@
     },
     {
     "num_models": 4,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Ferrari-logo-1.jpg",
+    "img_url": "https://ag-spots-2020.o.auroraobjects.eu/2020/06/06/ferrari-488-pista-spider-c401306062020010537_1.jpg",
     "max_car_id": 118,
     "id": 36,
     "name": "ferrari",
@@ -100,11 +100,11 @@
     },
     {
     "num_models": 19,
-    "img_url": "http://www.carlogos.org/uploads/car-logos/Nissan-logo-1.jpg",
+    "img_url": "https://i.pinimg.com/originals/b1/d7/35/b1d735c7813e0c287442eb2c01aaa34d.jpg",
     "max_car_id": 283,
     "id": 38,
     "name": "nissan",
-    "avg_horsepower": 251.21052631578948,
-    "avg_price": 36314.73684210526
+    "avg_horsepower": 251,
+    "avg_price": 36314
     }
     ]
