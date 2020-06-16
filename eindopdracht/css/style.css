@@ -99,7 +99,7 @@ header form input{
 }
 
 img {
-    width: 40em;
+    width: 80%;
 }
 
 h1 {
@@ -168,8 +168,8 @@ h1 {
 section {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
-    grid-gap: 1em; 
+    grid-template-columns: repeat(auto-fit, minmax(35em, 1fr));
+    grid-gap: 2em; 
     
 }
 
@@ -178,3 +178,21 @@ article {
     background-color: lightgray;
     padding-bottom: 3em;
 }
+
+.foo {
+    opacity: 1;
+    color: green;
+    font-size: 1.2em;
+}
+
+.foo:first-of-type::after{
+    content: " pk";
+}
+
+.foo:last-of-type::before {
+    content: "€ ";
+}
+
+.foo.visible {
+    opacity:0;
+  }

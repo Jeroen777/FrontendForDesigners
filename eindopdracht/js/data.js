@@ -24,6 +24,9 @@ function carList(jsonObj) {
         const myHP = document.createElement('p');
         const myPrice = document.createElement('p');
 
+        myHP.className = "foo";
+        myPrice.className = "foo";
+
         const myImage = document.createElement('img');
         const sliderImage = document.createElement('img');
         
@@ -35,7 +38,7 @@ function carList(jsonObj) {
         myImage.src = info[i].img_url;
         sliderImage.src = info[i].img_url;
 
-        //toevoegen van de elementen + info
+        //toevoegen van de elementen + info aan de pagina
         myArticle.appendChild(myH1);
         myArticle.appendChild(myHP);
         myArticle.appendChild(myPrice);
@@ -52,12 +55,12 @@ function carList(jsonObj) {
 
 
 const slider = document.querySelector('.slider');
-
 const leftArrow = document.querySelector('.left');
 const rightArrow = document.querySelector('.right');
+const carInfo = document.querySelector('.foo');
+
 
 var indexGetal = 0;
-
 
 //Als je op de rechter knop drukt dan gaat de slider naar rechts
 //Je maakt het index getal +1 zo krijg je iedere keer 1 * -25% waardoor het carousel verschuift
@@ -67,13 +70,35 @@ var indexGetal = 0;
 function rightKlik() {
     indexGetal = (indexGetal < 11) ? indexGetal + 1 : 11;
     slider.style.transform = 'translate(' + (indexGetal) * -25 + '%)';
-}
+};
 
 function leftKlik() {
     indexGetal = (indexGetal > 0) ? indexGetal - 1 : 0;
     slider.style.transform = 'translate(' + (indexGetal) * -25 + '%)';
-}
+};
+
+function priceGone(){
+    carInfo.classList.toggle("visible");
+  };
 
 
-rightArrow.addEventListener('click', rightKlik);
-leftArrow.addEventListener('click', leftKlik);
+//zonder timeout
+// rightArrow.addEventListener('click', rightKlik);
+// leftArrow.addEventListener('click', leftKlik);
+
+//event listener met timeout, zodra je op de button klikt word deze functie uitgevoerd met een korte delay
+leftArrow.addEventListener("click", function(){setTimeout(leftKlik, 500)});
+
+rightArrow.addEventListener("click", function(){setTimeout(rightKlik, 500)});
+
+carInfo.addEventListener("click", priceGone);
+
+
+
+
+// code om te checken welke button op je toetsenbord je gebruikt
+// je krijgt hiermee ook een getal van de knop op je toetsenbord die je ingedrukt hebt
+// dit getal heb je later nodig voor een 2e event
+window.addEventListener('keydown', (event) => {
+    console.log(event);
+})
