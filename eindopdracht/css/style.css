@@ -3,6 +3,9 @@ body {
     margin: 0;
 }
 
+/* navigatie  */
+/*           */
+/*          */
 
 header {
     z-index: 99;
@@ -98,6 +101,9 @@ header form input{
 
 }
 
+/**/
+/* carousel/slideshow met buttons*/
+/**/
 img {
     width: 80%;
 }
@@ -165,6 +171,10 @@ h1 {
     float: right;
 }
 
+
+/**/
+/* Grid van alle auto's*/
+/**/
 section {
     margin: auto;
     display: grid;
@@ -179,6 +189,9 @@ article {
     padding-bottom: 3em;
 }
 
+/**/
+/* Informatie van de auto*/
+/**/
 .foo {
     opacity: 1;
     color: green;

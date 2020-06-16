@@ -53,19 +53,18 @@ function carList(jsonObj) {
 
 }
 
-
+//variableen 
 const slider = document.querySelector('.slider');
 const leftArrow = document.querySelector('.left');
 const rightArrow = document.querySelector('.right');
 const carInfo = document.querySelector('.foo');
 
 
-var indexGetal = 0;
-
 //Als je op de rechter knop drukt dan gaat de slider naar rechts
 //Je maakt het index getal +1 zo krijg je iedere keer 1 * -25% waardoor het carousel verschuift
 // Dus het stapje gaat iedere keer -25% druk je weer gaat die vanaf dat punt weer -25%
 // Ook moet de slider niet oneindig verder kunnen gaan vandaar een if statement
+var indexGetal = 0;
 
 function rightKlik() {
     indexGetal = (indexGetal < 11) ? indexGetal + 1 : 11;
@@ -77,6 +76,7 @@ function leftKlik() {
     slider.style.transform = 'translate(' + (indexGetal) * -25 + '%)';
 };
 
+//functie info weghalen
 function priceGone(){
     carInfo.classList.toggle("visible");
   };
@@ -92,9 +92,6 @@ leftArrow.addEventListener("click", function(){setTimeout(leftKlik, 500)});
 rightArrow.addEventListener("click", function(){setTimeout(rightKlik, 500)});
 
 carInfo.addEventListener("click", priceGone);
-
-
-
 
 // code om te checken welke button op je toetsenbord je gebruikt
 // je krijgt hiermee ook een getal van de knop op je toetsenbord die je ingedrukt hebt
