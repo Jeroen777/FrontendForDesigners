@@ -196,6 +196,7 @@ article {
     opacity: 1;
     color: green;
     font-size: 1.2em;
+    z-index: 10;
 }
 
 .foo:first-of-type::after{

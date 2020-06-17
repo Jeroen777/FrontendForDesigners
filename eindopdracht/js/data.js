@@ -29,7 +29,7 @@ function carList(jsonObj) {
 
         const myImage = document.createElement('img');
         const sliderImage = document.createElement('img');
-        
+
         //info aan elementen toewijzen 
         myH1.textContent = info[i].name;
         myHP.textContent = info[i].avg_horsepower;
@@ -50,14 +50,30 @@ function carList(jsonObj) {
         slider.appendChild(imgBlok);
     }
 
+    
+    var carInfo = document.querySelector('.foo');
+    
+    console.log(carInfo);
+
+
+    function priceGone(){
+        carInfo.classList.toggle("visible");
+      };
+      
+      carInfo.addEventListener("click", priceGone);
+
 
 }
 
-//variableen 
+
+
+
+//variabelen aanmaken 
 const slider = document.querySelector('.slider');
 const leftArrow = document.querySelector('.left');
 const rightArrow = document.querySelector('.right');
-const carInfo = document.querySelector('.foo');
+// const carInfo = document.querySelector('.foo');
+
 
 
 //Als je op de rechter knop drukt dan gaat de slider naar rechts
@@ -77,9 +93,9 @@ function leftKlik() {
 };
 
 //functie info weghalen
-function priceGone(){
-    carInfo.classList.toggle("visible");
-  };
+// function priceGone(){
+//     carInfo.classList.toggle("visible");
+//   };
 
 
 //zonder timeout
@@ -91,7 +107,7 @@ leftArrow.addEventListener("click", function(){setTimeout(leftKlik, 500)});
 
 rightArrow.addEventListener("click", function(){setTimeout(rightKlik, 500)});
 
-carInfo.addEventListener("click", priceGone);
+// carInfo.addEventListener("click", priceGone);
 
 // code om te checken welke button op je toetsenbord je gebruikt
 // je krijgt hiermee ook een getal van de knop op je toetsenbord die je ingedrukt hebt
