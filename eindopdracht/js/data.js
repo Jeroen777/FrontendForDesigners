@@ -51,16 +51,9 @@ function carList(jsonObj) {
     }
 
     
-    var carInfo = document.querySelector('.foo');
+    let carInfo = document.querySelectorAll('.foo');
     
     console.log(carInfo);
-
-
-    function priceGone(){
-        carInfo.classList.toggle("visible");
-      };
-      
-      carInfo.addEventListener("click", priceGone);
 
 
 }
@@ -72,7 +65,9 @@ function carList(jsonObj) {
 const slider = document.querySelector('.slider');
 const leftArrow = document.querySelector('.left');
 const rightArrow = document.querySelector('.right');
-// const carInfo = document.querySelector('.foo');
+
+let carInfo = document.querySelector('.infoAutos');
+let btn = document.querySelector('#knop');
 
 
 
@@ -93,20 +88,16 @@ function leftKlik() {
 };
 
 //functie info weghalen
-// function priceGone(){
-//     carInfo.classList.toggle("visible");
-//   };
-
-
-//zonder timeout
-// rightArrow.addEventListener('click', rightKlik);
-// leftArrow.addEventListener('click', leftKlik);
+function priceGone(){
+    carInfo.classList.toggle("invis");
+  };
 
 //event listener met timeout, zodra je op de button klikt word deze functie uitgevoerd met een korte delay
 leftArrow.addEventListener("click", function(){setTimeout(leftKlik, 500)});
 
 rightArrow.addEventListener("click", function(){setTimeout(rightKlik, 500)});
 
+btn.addEventListener("click", priceGone);
 // carInfo.addEventListener("click", priceGone);
 
 // code om te checken welke button op je toetsenbord je gebruikt
