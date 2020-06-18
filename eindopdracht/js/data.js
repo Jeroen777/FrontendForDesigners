@@ -24,9 +24,11 @@ function carList(jsonObj) {
         const myHP = document.createElement('p');
         const myPrice = document.createElement('p');
 
+        //class meegeven aan elementen
         myHP.className = "foo";
         myPrice.className = "foo";
 
+        //img elementen maken
         const myImage = document.createElement('img');
         const sliderImage = document.createElement('img');
 
@@ -50,16 +52,13 @@ function carList(jsonObj) {
         slider.appendChild(imgBlok);
     }
 
-    
+    //logt alle .foo classes
     let carInfo = document.querySelectorAll('.foo');
-    
+
     console.log(carInfo);
 
 
 }
-
-
-
 
 //variabelen aanmaken 
 const slider = document.querySelector('.slider');
@@ -68,8 +67,6 @@ const rightArrow = document.querySelector('.right');
 
 let carInfo = document.querySelector('.infoAutos');
 let btn = document.querySelector('#knop');
-
-
 
 //Als je op de rechter knop drukt dan gaat de slider naar rechts
 //Je maakt het index getal +1 zo krijg je iedere keer 1 * -25% waardoor het carousel verschuift
@@ -85,20 +82,33 @@ function rightKlik() {
 function leftKlik() {
     indexGetal = (indexGetal > 0) ? indexGetal - 1 : 0;
     slider.style.transform = 'translate(' + (indexGetal) * -25 + '%)';
+
 };
 
-//functie info weghalen
-function priceGone(){
-    carInfo.classList.toggle("invis");
-  };
-
 //event listener met timeout, zodra je op de button klikt word deze functie uitgevoerd met een korte delay
-leftArrow.addEventListener("click", function(){setTimeout(leftKlik, 500)});
+leftArrow.addEventListener("click", function () {
+    setTimeout(leftKlik, 500)
+});
 
-rightArrow.addEventListener("click", function(){setTimeout(rightKlik, 500)});
+rightArrow.addEventListener("click", function () {
+    setTimeout(rightKlik, 500)
+});
 
-btn.addEventListener("click", priceGone);
-// carInfo.addEventListener("click", priceGone);
+//event met keypresses besturen van de pijlen met de linker en rechter pijltjestoetsen
+//rechts
+document.addEventListener("keydown", function (event) {
+    if (event.keyCode == 39) {
+        indexGetal = (indexGetal < 11) ? indexGetal + 1 : 11;
+        slider.style.transform = 'translate(' + (indexGetal) * -25 + '%)';;
+    }
+});
+//links
+document.addEventListener("keydown", function (event) {
+    if (event.keyCode == 37) {
+        indexGetal = (indexGetal > 0) ? indexGetal - 1 : 0;
+        slider.style.transform = 'translate(' + (indexGetal) * -25 + '%)';;
+    }
+});
 
 // code om te checken welke button op je toetsenbord je gebruikt
 // je krijgt hiermee ook een getal van de knop op je toetsenbord die je ingedrukt hebt
@@ -106,3 +116,17 @@ btn.addEventListener("click", priceGone);
 window.addEventListener('keydown', (event) => {
     console.log(event);
 })
+
+//functie info weghalen
+function priceGone() {
+    carInfo.classList.toggle("invis");
+};
+//event prijs weghalen
+btn.addEventListener("click", priceGone);
+
+//prijs weghalen met een keypress
+document.addEventListener("keydown", function (event) {
+    if (event.keyCode == 65) {
+        carInfo.classList.toggle("invis");;
+    }
+});
