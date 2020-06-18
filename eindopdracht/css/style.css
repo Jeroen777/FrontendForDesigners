@@ -163,7 +163,7 @@ h1 {
 .left img {
     width: 30%;
     float: left;
-
+    transition-duration: 1s;
 }
 
 .right {
@@ -173,6 +173,12 @@ h1 {
 .right img {
     width: 30%;
     float: right;
+    transition-duration: 1s;
+}
+
+.right img:hover, .left img:hover {
+    width: 40%;
+
 }
 
 /*  */
@@ -195,7 +201,7 @@ button {
     display: block;
     font-size: 1em;
     transition-duration: 2s;
-    background-color: green;
+    background-color: #05ff98;
     color: white;
 }
 
@@ -229,7 +235,7 @@ article {
 
 .foo {
     opacity: 1;
-    color: green;
+    color: #05ff98;
     font-size: 1.2em;
     z-index: 10;
 }
