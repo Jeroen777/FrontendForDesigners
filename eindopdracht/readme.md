@@ -3,16 +3,15 @@
 Voor deze opdracht ga ik een functionaliteit ontwerpen met externe data. De data is JSON die met een REST API van een externe bron wordt ingeladen met Javascript. Als de data geladen is moeten gebruikers je ontwerp op verschillende manieren kunnen bedienen. Verschillende states zijn vormgeven en worden op het juiste moment getoond.
 
 Ik gebruik het volgende JSON file.
-https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json
+https://raw.githubusercontent.com/Jeroen777/FrontendForDesigners/master/eindopdracht/cars.json
+Ik heb dit JSON bestand hergebruikt omdat de URL van de images niet helemaal meer klopte. Ik heb de de JSON vile gekopieërd en de url van deze images aangepast.
 
-<img width="1674" alt="Screenshot 2020-06-04 at 15 11 25" src="https://user-images.githubusercontent.com/60734114/83761255-59226700-a676-11ea-8029-1e1963e476fb.png">
-
-Uiteindelijk moet het van die JSON zoiets worden:
-
-<img width="1652" alt="Screenshot 2020-06-04 at 15 11 13" src="https://user-images.githubusercontent.com/60734114/83761526-b9190d80-a676-11ea-83af-35b27acc037a.png">
+Uiteindelijk ziet mijn geladen JSON met javascript, css en html er zo uit.
+# https://jeroen777.github.io/FrontendForDesigners/eindopdracht/
+<img width="1680" alt="Screenshot 2020-06-18 at 09 44 02" src="https://user-images.githubusercontent.com/60734114/84992986-ea9ada00-b148-11ea-97b9-1cefc4654cd9.png">
 
 ### schetsen
-![IMG_7704](https://user-images.githubusercontent.com/60734114/83763872-7efd3b00-a679-11ea-9a28-a8cd97917c7d.jpg)
+
 
 ### Begrippen
 
