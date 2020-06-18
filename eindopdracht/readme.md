@@ -10,8 +10,8 @@ Uiteindelijk ziet mijn geladen JSON met javascript, css en html er zo uit.
 ## https://jeroen777.github.io/FrontendForDesigners/eindopdracht/
 <img width="1680" alt="Screenshot 2020-06-18 at 09 44 02" src="https://user-images.githubusercontent.com/60734114/84992986-ea9ada00-b148-11ea-97b9-1cefc4654cd9.png">
 
-### schetsen
-
+### Idee
+Op mijn pagina kan je gebruik maken van een image slider. Hier zie je alle auto's van deze pagina staan. Daarnaast zie je een overzicht van alle auto's met een kleine omschrijving. Omdat deze auto's erg duur zijn heb ik een knop toegevoegd waarmee je de prijs kan verstoppen, zo schrik je hier niet erg van :).
 
 ### Begrippen
 
