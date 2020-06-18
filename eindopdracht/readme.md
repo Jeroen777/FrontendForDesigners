@@ -21,10 +21,6 @@ Ik heb voor de buttons pijltjes gebruikt. De user kan zelf bepalen om de slider 
 ##### Visual hierarchy:
 De knop wat verder onderin het scherm is groter en anders van vorm dan de rest van de pagina. Om deze redenen valt de knop op in vergelijking met zijn omgeving. Ook staat er wat ruimte omheen waardoor je echt naar de button toegetrokken wordt.
 
-##### Provide a natural next step
-
-
-
 ##### Appearance follows behavior
 Buttons doen wat buttons moeten doen. Je verwacht dat je op een button kan drukken. En je kan zeker op de buttons drukken, zodra je op de buttons drukt verwacht je dat er gaat gebeuren wat er staat of wat er aangegeven is. Als de button dan wat anders doet dan je verwacht is het geen goeie button.
 
