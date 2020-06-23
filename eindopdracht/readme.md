@@ -67,6 +67,9 @@ function priceGone() {
     }
 });
 ```
+# Lastig
+Wat wel lastig was, is het toevoegen van een keydown functie. Op internet kreeg je heel veel verschillende manieren om dit te doen. Vaak zijn ze ingewikkelt en dat maakt het voor mij wel onduidelijk. Maar uiteindelijk het stukje wat ik gebruikt heb ik wel makkelijk te begrijpen. Daarnaast was het even zoeken hoe ik de afbeeldingen van het JSON bestaand in mijn slideshow laden. Maar dit was eigenlijk toch eerder voor elkaar dan gedacht.
+
 
 # Clone
 ```
